@@ -39,7 +39,7 @@ Reproduction of https://github.com/kentcdodds/cross-env/issues/13
         * * *
         Listening at localhost:3040
 
-Note: See `* * * Running in dev mode`
+**Note**: See above `* * * Running in dev mode`
 
 ## Non-working example, using `start-dev-cross-webpack`:
 
@@ -61,4 +61,4 @@ Note: See `* * * Running in dev mode`
         * * *
         Listening at localhost:3040
 
-Note: See `* * * Running in undefined mode`
+**Note**: See above `* * * Running in undefined mode`
