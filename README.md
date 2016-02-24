@@ -2,19 +2,19 @@
 Reproduction of https://github.com/kentcdodds/cross-env/issues/13
 
 # Details
-1. git clone git@github.com:mikechabot/cross-env-example.git
+1. git clone `git@github.com:mikechabot/cross-env-example.git`
 2. `npm install`
 
 # Scripts
 
 | Script  | Description | Works as expected? |
 | ------------- | ------------- | ------------- |
+| `start-dev-cross-webpack` | Uses `cross-env` for setting `NODE_ENV` to dev, builds with webpack  | **No** |
+| `start-dev-cross-webpack` | Uses `cross-env` for setting `NODE_ENV` to production, builds with webpack  | **No** |
 | `start-dev-set`  | Uses `SET` for setting `NODE_ENV` to dev  | Yes |
 | `start-prod-set` | Uses `SET` for setting `NODE_ENV` to production  | Yes |
 | `start-dev-cross` | Uses `cross-env` for setting `NODE_ENV` to dev  | Yes |
 | `start-prod-cross` | Uses `cross-env` for setting `NODE_ENV` to production  | Yes |
-| `start-dev-cross-webpack` | Uses `cross-env` for setting `NODE_ENV` to dev, builds with webpack  | **No** |
-| `start-dev-cross-webpack` | Uses `cross-env` for setting `NODE_ENV` to production, builds with webpack  | **No** |
 
 # Examples
 
