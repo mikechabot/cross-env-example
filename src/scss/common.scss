@@ -1,0 +1,256 @@
+$font-stack: 'Raleway', sans-serif;
+
+/* Material Colors
+   ========================================================================== */
+
+$white: #FFFFFF;
+$black: #000000;
+
+$grey50: #FAFAFA;
+$grey100: #F5F5F5;
+$grey200: #EEEEEE;
+$grey300: #E0E0E0;
+$grey400: #BDBDBD;
+$grey500: #9E9E9E;
+$grey600: #757575;
+$grey700: #616161;
+$grey800: #424242;
+$grey900: #212121;
+
+$green50: #E8F5E9;
+$green100: #C8E6C9;
+$green200: #A5D6A7;
+$green300: #81C784;
+$green400: #66BB6A;
+$green500: #4CAF50;
+$green600: #43A047;
+$green700: #388E3C;
+$green800: #2E7D32;
+$green900: #1B5E20;
+$greenA100: #B9F6CA;
+$greenA200: #69F0AE;
+$greenA400: #00E676;
+$greenA700: #00C853;
+
+$lightGreen50: #F1F8E9;
+$lightGreen100: #DCEDC8;
+$lightGreen200: #C5E1A5;
+$lightGreen300: #AED581;
+$lightGreen400: #9CCC65;
+$lightGreen500: #8BC34A;
+$lightGreen600: #7CB342;
+$lightGreen700: #689F38;
+$lightGreen800: #558B2F;
+$lightGreen900: #33691E;
+$lightGreenA100: #CCFF90;
+$lightGreenA200: #B2FF59;
+$lightGreenA400: #76FF03;
+$lightGreenA700: #64DD17;
+
+$blue50: #E3F2FD;
+$blue100: #BBDEFB;
+$blue200: #90CAF9;
+$blue300: #64B5F6;
+$blue400: #42A5F5;
+$blue500: #2196F3;
+$blue600: #1E88E5;
+$blue700: #1976D2;
+$blue800: #1565C0;
+$blue900: #0D47A1;
+$blueA100: #82B1FF;
+$blueA200: #448AFF;
+$blueA400: #2979FF;
+$blueA700: #2962FF;
+
+$brown50: #EFEBE9;
+$brown100: #D7CCC8;
+$brown200: #BCAAA4;
+$brown300: #A1887F;
+$brown400: #8D6E63;
+$brown500: #795548;
+$brown600: #6D4C41;
+$brown700: #5D4037;
+$brown800: #4E342E;
+$brown900: #3E2723;
+
+$indigo50: #E8EAF6;
+$indigo100: #C5CAE9;
+$indigo200: #9FA8DA;
+$indigo300: #7986CB;
+$indigo400: #5C6BC0;
+$indigo500: #3F51B5;
+$indigo600: #3949AB;
+$indigo700: #303F9F;
+$indigo800: #283593;
+$indigo900: #1A237E;
+
+$primary-color-dark:   $indigo700;
+$primary-color:        $indigo500;
+$primary-color-light:  $indigo100;
+$primary-color-text:   $white;
+$accent-color:         $grey500;
+$primary-text-color:   $grey900;
+$secondary-text-color: $grey600;
+$divider-color:        $grey400;
+
+
+
+/* SCSS Mixins
+   ========================================================================== */
+
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin margin($margin) {
+    margin: $margin;
+}
+
+@mixin padding($padding) {
+    padding: $padding;
+}
+
+@mixin height($height) {
+    height: $height;
+}
+
+@mixin width($width) {
+    width: $width;
+}
+
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin flex-grow($grow) {
+    flex-grow: $grow;
+}
+
+@mixin justify-center {
+    justify-content: center;
+}
+
+@mixin justify-space-between {
+    justify-content: space-between;
+}
+
+@mixin align-center {
+    align-items: center;
+}
+
+@mixin content-center {
+    align-content: center;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+
+@mixin full-height {
+    @include height(100%);
+}
+
+@mixin full-width {
+    @include width(100%);
+}
+
+@mixin background-primary {
+    @include background-color($primary-color);
+}
+
+@mixin full-center {
+    @include justify-center;
+    @include align-center;
+    @include content-center;
+    @include text-center;
+}
+
+@mixin app-bar {
+    @include flex;
+    @include height(50px);
+    @include background-primary;
+    @include align-center;
+    @include border-radius(5px);
+    @include color($white);
+    @include padding(5px)
+    font-weight: 600;
+    font-size: 125%;
+    margin-top: 10px;
+}
+
+
+/* Common Styles
+   ========================================================================== */
+
+.flex {
+    @include flex;
+}
+
+.flex-column {
+    @include flex;
+    @include flex-column;
+}
+
+.flex-wrap {
+    @include flex-wrap;
+}
+
+.align-center {
+    @include align-center;
+}
+
+.justify-space-between {
+    @include justify-space-between;
+}
+
+.full-height {
+    @include full-height;
+}
+
+.full-center {
+    @include full-center;
+}
+
+.justify-center {
+    @include justify-center;
+}
+
+.content-center {
+   @include content-center;
+}
+
+.align-center {
+    @include align-center;
+}
+
+.text-center {
+    @include text-center;
+}
+
+.full-width {
+    @include full-width;
+}
+
+.app-bar {
+    @include app-bar;
+}

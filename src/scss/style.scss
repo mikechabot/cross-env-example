@@ -1,0 +1,25 @@
+@import 'common';
+
+body {
+  font: 100% $font-stack;
+  color: $grey600;
+}
+
+/* Supernote
+   ========================================================================== */
+
+#markov {
+    @include flex;
+    @include full-width;
+}
+
+.markov-container {
+    @include flex;
+    @include flex-column;
+    @include align-center;
+    .item {
+        width: 100%;
+        max-width: 700px;
+        min-width: 400px;
+    }
+}
