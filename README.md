@@ -39,6 +39,8 @@ Reproduction of https://github.com/kentcdodds/cross-env/issues/13
         * * *
         Listening at localhost:3040
 
+Note: See `* * * Running in dev mode`
+
 ## Non-working example, using `start-dev-cross-webpack`:
 
         mchabot@XG01484 MINGW64 /c/_workspaces/cross-env-example
@@ -58,3 +60,5 @@ Reproduction of https://github.com/kentcdodds/cross-env/issues/13
         * * * Running in undefined mode
         * * *
         Listening at localhost:3040
+
+Note: See `* * * Running in undefined mode`
